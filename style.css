@@ -1,0 +1,219 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --background: #fffdf9;
+  --primary-color: #beebe9;
+  --second-color: #8ac6d1;
+  --accent-color: #ffe3ed;
+  --dark-color: rgb(100, 100, 100);
+}
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--background);
+  transition: all 1s ease-in-out;
+
+  color: var(--dark-color);
+}
+nav {
+  flex-direction: row;
+
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  height: 70px;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  list-style-type: none;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+}
+nav > ul > li {
+  list-style: none;
+  margin: 20px auto;
+}
+
+.container {
+  position: relative;
+  margin-bottom: 50px;
+}
+hr {
+  border-top: 10px dotted var(--accent-color);
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  margin: 50px auto;
+  width: 80px;
+}
+.font_accent {
+  font-family: "Corinthia", cursive;
+  color: var(--second-color);
+}
+p {
+  z-index: 1000;
+}
+h1 {
+  font-size: 7rem;
+}
+h3 {
+  color: var(--second-color);
+}
+.nolineheight {
+  line-height: 10px;
+  color: var(--second-color);
+  font-size: 5rem;
+  text-align: center;
+  z-index: -1;
+}
+
+a {
+  color: var(--second-color);
+  text-decoration: none;
+  padding: 10px 20px;
+}
+a:hover {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.skill-row {
+  width: 50%;
+
+  line-height: 2;
+  margin: 50px auto;
+  text-align: left;
+  padding: 20px;
+}
+.icons {
+  width: 25%;
+}
+
+.intro {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.btn {
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  position: relative;
+  background: var(--second-color);
+  padding: 1em 2em 1em 2em;
+  color: var(--dark-color);
+  text-decoration: none;
+  margin: 10px auto;
+  border-radius: 5px;
+
+  font-weight: 400;
+  border: 0;
+  width: fit-content;
+}
+
+.btn:hover {
+  background: var(--primary-color);
+  padding: 1em 2em 1em 2em;
+  color: var(--dark-color);
+  text-decoration: none;
+  margin: 10px auto;
+  border-radius: 5px;
+
+  font-weight: 400;
+  border: 0;
+  width: fit-content;
+}
+
+.bottom-container {
+  background-color: var(--accent-color);
+  padding-top: 20px;
+}
+
+.copy {
+  padding: 20px;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
